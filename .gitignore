@@ -1,0 +1,46 @@
+# Dependencies
+node_modules/
+lib/*
+!lib/
+!lib/forge-std
+!lib/forge-std/
+
+# Build artifacts (Hardhat / Foundry)
+artifacts/
+cache/
+out/
+forge-cache/
+broadcast/
+coverage/
+coverage.json
+
+# Typechain and generated typings
+typechain-types/
+typechain/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# VS Code and OS files
+.vscode/
+.DS_Store
+
+# Test and benchmark outputs
+.gas-snapshot
+
+# Security tooling outputs
+slither-output.json
+slither-*.json
+slither-*.txt
+
+# Project-specific docs/reports to keep local
+oft_adapter_architecture_spec.md

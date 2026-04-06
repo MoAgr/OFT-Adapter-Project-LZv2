@@ -1,0 +1,46 @@
+{
+  "name": "oft-adapter-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "clean": "rm -rf artifacts cache out forge-cache",
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "lz:deploy": "npx hardhat lz:deploy",
+    "lz:oapp:config:get": "npx hardhat lz:oapp:config:get --oapp-config layerzero.config.ts",
+    "lz:oapp:wire": "npx hardhat lz:oapp:wire --oapp-config layerzero.config.ts"
+  },
+  "dependencies": {
+    "@layerzerolabs/lz-definitions": "^3.0.167",
+    "@layerzerolabs/lz-evm-messagelib-v2": "^3.0.167",
+    "@layerzerolabs/lz-evm-oapp-v2": "^3.0.167",
+    "@layerzerolabs/lz-evm-protocol-v2": "^3.0.167",
+    "@layerzerolabs/lz-evm-v1-0.7": "^3.0.167",
+    "@layerzerolabs/lz-v2-utilities": "^3.0.167",
+    "@layerzerolabs/metadata-tools": "^3.0.0",
+    "@layerzerolabs/oapp-evm": "^0.4.1",
+    "@layerzerolabs/oft-evm": "^4.0.1",
+    "@layerzerolabs/toolbox-hardhat": "^0.6.13",
+    "@openzeppelin/contracts": "^4.9.6",
+    "@safe-global/safe-core-sdk-types": "^5.1.0",
+    "hardhat": "^2.22.0",
+    "solidity-bytes-utils": "^0.8.4"
+  },
+  "devDependencies": {
+    "ethers": "^5.7.2",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@types/node": "^20.14.2",
+    "dotenv": "^16.4.5",
+    "hardhat-deploy": "^0.12.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.2"
+  },
+  "resolutions": {
+    "ethers": "^5.7.2",
+    "hardhat-deploy": "^0.12.1"
+  },
+  "overrides": {
+    "ethers": "^5.7.2",
+    "hardhat-deploy": "^0.12.1"
+  }
+}
