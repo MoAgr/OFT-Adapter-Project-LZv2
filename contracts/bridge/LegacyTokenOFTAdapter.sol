@@ -161,7 +161,7 @@ contract LegacyTokenOFTAdapter is
             _dstEid
         );
 
-        uint256 available = bridgeCap - bridgedAmount; //@mohit: gas savings?
+        uint256 available = bridgeCap - bridgedAmount;
         if (amountSentLD > available)
             revert BridgeCapExceeded(amountSentLD, available);
 
