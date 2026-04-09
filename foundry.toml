@@ -6,6 +6,7 @@ libs = ["lib", "node_modules"]
 test = "test"
 script = "script"
 solc_version = "0.8.22"
+evm_version = "paris"
 optimizer = true
 optimizer_runs = 200
 via_ir = false
@@ -28,6 +29,6 @@ base_sepolia = "${BASE_SEPOLIA_RPC_URL}"
 arbitrum_sepolia = "${ARBITRUM_SEPOLIA_RPC_URL}"
 
 [etherscan]
-sepolia = { key = "${ETHERSCAN_API_KEY}", url = "https://api.etherscan.io/v2/api" }
-base_sepolia = { key = "${BASESCAN_API_KEY}", url = "https://api.etherscan.io/v2/api" }
-arbitrum_sepolia = { key = "${ARBISCAN_API_KEY}", url = "https://api.etherscan.io/v2/api" }
+sepolia = { key = "${ETHERSCAN_API_KEY}", url = "https://api.etherscan.io/v2/api?chainid=11155111" }
+base_sepolia = { key = "${BASESCAN_API_KEY}", url = "https://api.etherscan.io/v2/api?chainid=84532" }
+arbitrum_sepolia = { key = "${ARBISCAN_API_KEY}", url = "https://api.etherscan.io/v2/api?chainid=421614" }
